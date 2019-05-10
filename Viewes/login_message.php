@@ -1,12 +1,8 @@
 <html>
     <body>
-        <b>Авторизуйтесь!</b>
-        <form action = "submit.php" method = "POST">
-            <input type = "hidden" name = "action" value = "login">
-            <input type = "text" placeholder = "Логин" name = "userName">
-            <input type = "password" placeholder = "Пароль" name = "password">
-            <br>
-            <button type = "submit">OK</button>
-        </form>
+        <h1><a href = "Viewes/login_form.php">Выполните вход</a> или <a href = "Viewes/register_form.php"> зарегистрируйтесь </a>!</b></h1>
+        
+
+        
     </body>
 </html>
