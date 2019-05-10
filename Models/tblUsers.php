@@ -14,4 +14,6 @@ class tblUsers extends Models
     {
         return self::mysql()->getAll('SELECT * FROM tblUsers');
     }
+
+
 }

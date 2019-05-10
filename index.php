@@ -2,11 +2,10 @@
 
     include "settings/init.php";
 
-    $a = Models\tblUsers::test();
-    //print $a;
+    if (empty($_SESSION) || $_SESSION['Is_auth'] == 0) {
+        //print 'LogIn!';
+        include 'Viewes/login_message.php'; //авторизуйтесь!
+    }
 
-    $test = Models\tblUsers::getUser();
-    print '<pre>';
-    print_r($test);
-    print '<pre>';
-    
+
+
