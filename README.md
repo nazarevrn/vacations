@@ -10,5 +10,5 @@ vendor/bin/phinx init
 
 Миграции
 
-/vendor/bin/phinx create MyMigrationName - создание
-/vendor/bin/phinx migrate - выполнить миграцию
+vendor/bin/phinx create MyMigrationName - создание
+vendor/bin/phinx migrate - выполнить миграцию

@@ -1,4 +1,5 @@
 <?php
+include "settings/init.php";
 
 if (empty($_POST['action'])) {
     include 'index.php';

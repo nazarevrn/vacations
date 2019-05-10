@@ -33,7 +33,8 @@ class MyNewMigration extends AbstractMigration
     {
         $users = $this->table('tblUsers');
         $users->addColumn('username', 'string', ['limit' => 20])
-              ->addColumn('password', 'string', ['limit' => 40])
+              ->addColumn('password', 'string', ['limit' => 255])
+              ->addColumn('sault', 'string', ['limit' => 255])
               ->addColumn('email', 'string', ['limit' => 100])
               ->addColumn('first_name', 'string', ['limit' => 30])
               ->addColumn('last_name', 'string', ['limit' => 30])
