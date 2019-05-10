@@ -1,5 +1,6 @@
 {
     "require": {
-        "colshrapnel/safemysql": "1.1.0"
+        "colshrapnel/safemysql": "1.1.0",
+        "robmorgan/phinx": "0.10.7"
     }
 }
