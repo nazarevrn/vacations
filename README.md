@@ -7,3 +7,8 @@ composer install
 vendor/bin/phinx init
 
 Прописать в phinx.yml данные для доступа к БД
+
+Миграции
+
+/vendor/bin/phinx create MyMigrationName - создание
+/vendor/bin/phinx migrate - выполнить миграцию

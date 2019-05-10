@@ -2,5 +2,14 @@
     "require": {
         "colshrapnel/safemysql": "1.1.0",
         "robmorgan/phinx": "0.10.7"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Models\\": "Models/",
+            "Classes\\": "Classes/"
+        }
     }
+
+
 }
