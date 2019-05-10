@@ -32,10 +32,13 @@ class tblUsers extends Models
                 ];
     }
 
-    // public static function readSaultedPass($sault, $password)
-    // {
-
-    // }
+    public static function registerUser($login, $password, $email, $firstName, $lastName)
+    {
+        $saultAndPass = self::hidePass($password);
+        //return $saultAndPass;
+        $sql = 'INSERT INTO tblUsers SET username = ?s, password = ?s, sault = ?s, email = ?s, first_name = ?s, last_name = ?s, created = NOW()';
+        self::mysql()->query($sql, $login, $saultAndPass['saultedPass'], $saultAndPass['sault'], $email, $firstName, $lastName);
+    }
 
 
 
